@@ -1,0 +1,22 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: richiefrich
+  description: SSH-Keys installation and lockdown SSHD.
+  company: "Code-Test"
+  license: "license (GPL2)"
+  min_ansible_version: 1.9
+  platforms:
+    - name: EL
+      versions:
+      - all
+    - name: Debian
+      versions:
+      - all
+    - name: Ubuntu
+      versions:
+      - all
+  galaxy_tags:
+    - system
+    - security

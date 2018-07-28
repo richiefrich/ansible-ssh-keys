@@ -1,0 +1,10 @@
+---
+
+my_user:
+  schristman:
+    groups: wheel,devops
+    password: ""
+    uid: "5003"
+    gid: "5003"
+    sshkeys: |
+            ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDDY+P7fDvXUFZWOSQiilJTrb+6XZpecPHiMPYf2B4oaDE3astMLnda3Qug4Y50qwaPJ3a5QbOr08oAM7TRfaLNH2EwBg7Am9809OL/AIVcBJBphJ6YBC/qhajcrxvTWlqS1kn/YPmwYEnq9u7+ConieK+Xul3nsPyFglMmwaaiGORbk9HMjVcBaUiVs75com8JPgNVIQDmgnWbGshwuaTBr9JX2yTD7G1CoePDPUXTDPEcS6vwN6n70lA32vAzaw4ZEd9jerscyPRY4qntz7RuPrN0PE6JUeVkYMc+oeta1zVaBt+iDi42kEhZO1rqDGo1x+PCz6z+LOVCTq6FezWbNr/lLcBPEsXKnnniyoJGH7omPkoGqV1ggPAt/r+WVslL4TTpEosviBp7qse5djUbsLx4oy6SLg2rSl5WD2YqTi+CeQGt9icGy52ZQ1vHXv07UmhAp7n2m45WLWgZU0+Vm3D+7UB7gexRAcMW8yWGK5fHplZwIywx6mYCQB+Fk0Fi3PGeaULMYw8xOi1Gf5m6FlGedmEwtYA7qOnMvq5TYJT1BhHRAXzDarGxmrZ4buZ41em7PFIQiK/fFhQY9O5lbPpAmiPoVh6fkMTGKc8q+wGvtiKauyuBgHO/v2+QH19agmySSYY/OCbMbvPFW+Is0x94TdLFrjzysmpdaiELhw==

@@ -1,0 +1,25 @@
+---
+
+- name: Adding ssh keys os CentOS
+  authorized_key:
+    user: "{{ item.key }}"
+    key: "{{ item.value.sshkeys }}"
+    state: present
+    exclusive: yes  # Make sure ONLY the SSH keys in our list are in authorized_keys
+    manage_dir: yes
+  when: ansible_os_family == 'RedHat'
+  with_dict: "{{ users }}"
+  tags:
+    - centos_ssh_keys
+
+- name: Adding ssh keys os Ubuntu
+  authorized_key:
+    user: "{{ item.key }}"
+    key: "{{ item.value.sshkeys }}"
+    state: present
+    exclusive: yes  # Make sure ONLY the SSH keys in our list are in authorized_keys
+    manage_dir: yes
+  when: ansible_os_family == 'Debian'
+  with_dict: "{{ users }}"
+  tags:
+    - ubuntu_ssh_keys

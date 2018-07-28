@@ -1,0 +1,17 @@
+---
+
+- name: deploy ssh-keys
+  hosts:
+  - all
+  become: yes
+  gather_facts: yes
+  gather_timeout: 60
+
+  vars:
+    inventory_dir: "{{ lookup('env','PWD') }}"
+
+  vars_files:
+  - "{{ inventory_dir }}/group_vars/all.yml"
+
+  roles:
+  - "{{ inventory_dir }}/roles/ssh_keys"
